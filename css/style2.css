@@ -1,0 +1,1599 @@
+/*                           //   START - GLOUBAL RULS  //                           */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*---------------------------------------
+CUSTOM PROPERTIES ( VARIABLES )             
+-----------------------------------------*/
+:root {
+    --main-color: #5bc1ac;
+    --white-color: #ffffff;
+    --primary-color: #5bc1ac;
+    --secondary-color: #5a6f80;
+    --section-bg-color: #f0f8ff;
+    --site-footer-bg-color: #44525d;
+    --custom-btn-bg-color: #597081;
+    --custom-btn-bg-hover-color: #5bc1ac;
+    --dark-color: #000000;
+    --p-color: #717275;
+    --border-color: #e9eaeb;
+    --section-padding: 50px;
+    --body-font-family: 'Prompt', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.section-p1 {
+    padding: 0 50px;
+}
+
+a,
+button {
+    touch-action: manipulation;
+    transition: all 0.3s;
+}
+
+body {
+    background-color: var(--white-color);
+    font-family: var(--body-font-family);
+}
+
+/*---------------------------------------
+SECTION               
+-----------------------------------------*/
+
+
+/*                           // START - HEADER //                           */
+.header {
+    background-color: var(--main-color);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.header .para,
+.email {
+    color: #fff;
+    font-size: 13px;
+}
+
+.header i {
+    margin-right: 5px;
+}
+
+
+
+/*                         //  START - THE FIRST //                    */
+.the-first {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .185) !important;
+    min-height: 80px;
+    background-color: var(--white-color);
+}
+
+.the-first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.the-first .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 4px;
+}
+
+/* logo */
+.the-first .logo a {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.the-first .logo a:hover {
+    color: var(--dark-color);
+}
+
+.the-first .logo-text {
+    display: block;
+}
+
+.the-first .logo p {
+    color: var(--p-color);
+    font-size: 8px;
+    padding: 5px;
+    font-weight: 600;
+}
+
+/* navigation */
+
+.the-first .ul-big {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.the-first nav .ul-big li {
+    font-size: 15px;
+    padding: 5px 15px;
+    color: var(--custom-btn-bg-color);
+}
+
+
+.the-first .btn {
+    color: var(--custom-btn-bg-color);
+    border: 1px solid var(--custom-btn-bg-color);
+    margin-left: 25px;
+    padding: 9px 19px;
+    background-color: white;
+    border-radius: 22px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.the-first .btn:hover {
+    background-color: var(--custom-btn-bg-hover-color);
+    border: 1px solid transparent;
+}
+
+.the-first p,
+a {
+    color: #222;
+}
+
+.the-first .btn:hover a {
+    color: #fff;
+}
+
+.the-first select {
+    border: none;
+    cursor: pointer;
+}
+
+.the-first .icon {
+    display: none;
+}
+
+.the-first nav a:hover,
+select:hover {
+    color: #5bc1ac;
+}
+
+#navbar.active2 {
+    display: block;
+}
+
+/*                         // START - LANDING //                     */
+
+.land {
+    height: 100vh;
+    background-image: url(../images/slide/volunteer-helping-with-donation-box.jpg);
+    background-size: cover;
+}
+
+.landing .slids {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.landing .land::after {
+    content: "";
+    position: absolute;
+    bottom: -400px;
+    right: -400px;
+    width: 0px;
+    height: 0px;
+    border-width: 400px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--white-color);
+    transform: rotate(405deg);
+}
+
+.landing .land .text {
+    position: absolute;
+    bottom: 125px;
+    right: 25px;
+    z-index: 10;
+    text-align: center;
+}
+
+.landing .land .text p {
+    font-size: 14px;
+    color: var(--p-color);
+}
+
+.landing .land .text h1 {
+    color: var(--secondary-color);
+    text-transform: capitalize;
+    font-size: 35px;
+    margin: auto;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.landing .icons i {
+    color: var(--secondary-color);
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.landing .icons .left,
+.landing .icons .right {
+    position: absolute;
+    top: calc(50% + 80px);
+    transform: translateY(-calc(50% + 80px));
+}
+
+.landing .icons .left {
+    left: 50px
+}
+
+.landing .icons .right {
+    right: 50px
+}
+
+.landing i:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+/*                       // START - SERVICES  //                 */
+.services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.services .title {
+    color: var(--secondary-color);
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 30px;
+}
+
+.services .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: center;
+}
+
+.services .container .box {
+    margin-top: 15px;
+    padding: 30px 0px;
+}
+
+.services .container .box:hover {
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 10%);
+    transform: translateY(-7px);
+    transition: 0.2s;
+}
+
+.services .container .box .image {
+    width: 100%;
+    text-align: center;
+}
+
+.services .container .box .image img {
+    max-width: 100px;
+}
+
+.services .container .box .info {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+/*                      // START - About us //                      */
+
+.about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--section-bg-color);
+    overflow: auto;
+}
+
+.about .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 30px;
+    align-content: center;
+    align-items: center;
+}
+
+.about .container .image img {
+    display: block;
+    border-radius: 15px;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+}
+
+.about .son {
+    background-color: var(--white-color);
+    border-radius: 15px;
+    padding: 0 20px;
+}
+
+
+.about .son h3 {
+    color: var(--primary-color);
+    font-size: 20px;
+    padding: 20px;
+}
+
+.about .son p {
+    color: var(--p-color);
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+.about .son1 h2 {
+    color: var(--secondary-color);
+    font-size: 40px;
+    padding: 20px 20px 0 20px;
+}
+
+.about .son1 {
+    width: 100%;
+    grid-column: span 2;
+
+}
+
+.about .son2 .info {
+    padding: 10px;
+}
+
+.about .son2 .info ul li {
+    padding: 10px 7px;
+    color: var(--p-color);
+}
+
+.about .son2 .info ul li i {
+    font-size: 15px;
+    background-color: var(--section-bg-color);
+    padding: 2px 5px;
+}
+
+/*                 /////          START -  About us - TWO           /////                 */
+.about-two {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.about-two {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-two .image {
+    width: 362px;
+    height: 373px;
+    text-align: center;
+}
+
+.about-two .image img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 30%);
+    object-fit: cover;
+}
+
+.about-two .text {
+    width: 500px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about-two .about-two-title h2 {
+    color: var(--secondary-color);
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.about-two .about-two-title span {
+    color: var(--p-color);
+    font-size: 13px;
+}
+
+.about-two .about-two-info p {
+    color: var(--p-color);
+    font-size: 13px;
+    padding: 15px 0 0 0;
+    line-height: 1.6;
+}
+
+.about-two .icons {
+    padding: 20px 0;
+}
+
+.about-two .icons a i {
+    background-color: var(--custom-btn-bg-color);
+    color: white;
+    font-size: 13px;
+    padding: 9px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.about-two .icons a i:hover {
+    background-color: var(--custom-btn-bg-hover-color);
+}
+
+/*                 /////          END -  About us - TWO           /////                 */
+
+/*                 /////           START - BANNER         /////                 */
+.banner {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: var(--section-bg-color);
+    position: relative;
+    overflow: hidden;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.banner::before {
+    position: absolute;
+    content: "";
+    left: -15px;
+    top: -100px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+
+.banner::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 20px solid var(--secondary-color);
+    bottom: -90px;
+
+}
+
+.banner .text h2 {
+    color: var(--secondary-color);
+    font-size: 35px;
+    padding: 5px 0 0 0;
+
+}
+
+.banner .links {
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.banner .links .a-one {
+    padding: 0px 30px;
+    margin: auto;
+}
+
+.banner .links .a-one a {
+    color: var(--p-color);
+}
+
+.banner .links .a-one:hover a {
+    color: var(--custom-btn-bg-hover-color);
+}
+
+.banner .links .a-two {
+    background-color: var(--custom-btn-bg-color);
+    border-radius: 25px;
+    padding: 14px 22px;
+}
+
+.banner .links .a-two a {
+    color: white;
+    font-weight: 400;
+}
+
+.banner .links .a-two:hover {
+    background-color: var(--custom-btn-bg-hover-color);
+}
+
+/*                 /////           START - OUR - CAUSES          /////                 */
+.our-causes {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.our-causes h2 {
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 40px;
+    color: var(--secondary-color);
+    text-transform: capitalize;
+}
+
+.our-causes .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.our-causes .container .box {
+    width: 300px;
+    box-shadow: 0 6px 6px #ada2b9;
+    border-radius: 15px;
+}
+
+.our-causes .container .box .image img {
+    max-width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.our-causes .container .box .text {
+    padding: 25px 20px 5px;
+}
+
+.our-causes .container .box .text h3 {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.our-causes .container .box .text p {
+    color: var(--p-color);
+    font-size: 13px;
+    padding: 15px 0;
+    line-height: 1.4;
+}
+
+.our-causes .prog {
+    background-color: #dedadc;
+    height: 5px;
+    width: calc(100% - 40px);
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.our-causes .prog span {
+    display: block;
+    background-color: var(--secondary-color);
+    height: 100%;
+
+}
+
+.our-causes .box .link-donate {
+    background-color: var(--custom-btn-bg-color);
+    padding: 16px 0;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+}
+
+.our-causes .box .link-donate a {
+
+    color: white;
+    font-size: 15px;
+}
+
+.our-causes .box .link-donate:hover {
+    background-color: var(--custom-btn-bg-hover-color);
+}
+
+/*                 /////          START - VOLUNTEER          /////                 */
+.volunteer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.volunteer .title-volunteer {
+    color: var(--white-color);
+    font-size: 16px;
+}
+
+.volunteer form {
+    width: 100%;
+    padding: 30px 10px 30px 40px;
+    background-color: var(--white-color);
+    border-radius: 20px;
+
+}
+
+.volunteer .contact-volunteer {
+    width: 50%;
+}
+
+.volunteer form .inputs-form {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.volunteer form input,
+.volunteer form textarea {
+    width: 45%;
+    border-radius: 10px;
+    background-color: var(--section-bg-color);
+    border: none;
+    padding: 13px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.volunteer form input {
+    margin-right: 10px;
+}
+
+
+.volunteer .contact-volunteer form button[type="submit"] {
+    display: block;
+    color: var(--white-color);
+    border: none;
+    background: var(--custom-btn-bg-color);
+    padding: 13px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.volunteer form button[type="submit"]:hover {
+    background-color: var(--custom-btn-bg-hover-color);
+}
+
+.volunteer form h2 {
+    font-size: 23px;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+.volunteer .info-volunteer {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+    margin-top: 50px;
+}
+
+.volunteer .image-info {
+    width: 240px;
+    height: 240px;
+}
+
+.volunteer .image-info img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.volunteer .title-info h3 {
+    font-size: 30px;
+    color: var(--white-color);
+}
+
+.volunteer .text-info p {
+    text-align: center;
+    line-height: 1.3;
+    font-size: 14px;
+    color: var(--white-color);
+}
+
+.volunteer::after {
+    content: "";
+    position: absolute;
+    right: -70px;
+    bottom: -80px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+
+
+/*                 /////         START LANDING - DONATE        /////                 */
+.landing-donate {
+    background-image: url(../images/different-people-doing-volunteer-work.jpg);
+    background-size: cover;
+    height: calc(100vh + 300px);
+    object-fit: fill;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-donate .make-donation {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 40px;
+    background-color: var(--white-color);
+    border-radius: 15px;
+}
+
+
+.make-donation h1 {
+    font-size: 30px;
+}
+
+.make-donation h2 {
+    color: var(--primary-color);
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.make-donation .div-one .div-one-small p {
+    width: 200px;
+    padding: 10px 30px;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    font-size: 15px;
+}
+
+.make-donation .div-one .div-one-small .p-two {
+    background-color: var(--white-color);
+    color: black;
+}
+
+.make-donation .div-one .div-one-small .p-two:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    transition: 0.3s;
+}
+
+.make-donation .div-one .div-one-small {
+    display: flex;
+    margin: 20px 0
+}
+
+.make-donation .div-two .prices {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.div-two .prices div {
+    width: 90px;
+    height: 45px;
+    background-color: var(--section-bg-color);
+    color: #777;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.div-two .prices div:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    transition: 0.3s;
+}
+
+.div-two .prices input {
+    width: 180px;
+    height: 45px;
+    background-color: var(--section-bg-color);
+    color: #777;
+    margin: 10px 0;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+
+.make-donation .div-three {
+    margin: 10px 0;
+}
+
+.make-donation .div-three input {
+    width: 200px;
+    height: 40px;
+    background-color: var(--section-bg-color);
+    color: #777;
+    margin: 10px 0px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+
+.make-donation .div-three .inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.make-donation .div-four {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.make-donation .div-four label {
+    padding: 5px;
+    color: var(--site-footer-bg-color);
+    font-size: 16px;
+}
+
+.make-donation button {
+    margin: 30px 0;
+    background-color: transparent;
+    border: none;
+    background-color: var(--secondary-color);
+    padding: 13px;
+    width: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.make-donation button a {
+    color: white;
+    font-size: 15px;
+}
+
+.make-donation button:hover {
+    background-color: var(--primary-color);
+}
+
+/*                 /////         START - FOOTER -ONE       /////                 */
+.footer-one {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: var(--site-footer-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-one .col-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-one .col-one img {
+    width: 100px;
+}
+
+.footer-one h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.footer-one .col-one,
+.col-two,
+.col-three,
+.col-four {
+    padding: 10px 30px;
+}
+
+.footer-one .col-two,
+.footer-one .col-three,
+.footer-one .col-four {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.footer-one a,
+.footer-one .col-four div i {
+    color: var(--white-color);
+    font-size: 15px;
+}
+
+.footer-one .col-four div i {
+    margin-right: 5px;
+}
+
+.footer-one p,
+.footer-one .col-four div {
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+
+.footer-one a:hover {
+    color: var(--primary-color);
+}
+
+.footer-one .zar-two {
+    color: var(--custom-btn-bg-color);
+    padding: 12px 19px;
+    background-color: var(--secondary-color);
+    border-radius: 22px;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 20px;
+    color: white;
+}
+
+.footer-one .zar-two:hover {
+    background-color: var(--custom-btn-bg-hover-color);
+    color: white;
+}
+
+/*                 /////         START- FOOTER -TWO      /////                 */
+footer {
+    background-color: var(--secondary-color);
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+footer .text p {
+    color: var(--white-color);
+    font-size: 12px;
+
+}
+
+footer .links-social-media i {
+    background-color: var(--site-footer-bg-color);
+    color: white;
+    font-size: 10px;
+    padding: 8px;
+    border-radius: 50%;
+    margin-right: 4px;
+
+}
+
+footer .links-social-media i:hover {
+    background-color: var(--custom-btn-bg-hover-color);
+}
+
+/*                 /////         START -LANDING - NEWS      /////                 */
+.landing-news {
+    background-image: url(../images/news/close-up-volunteer-oganizing-stuff-donation.jpg);
+    background-position: 0 55%;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.landing-news::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000070;
+}
+
+.landing-news .title-news h1 {
+    color: white;
+    font-size: 50px;
+    z-index: 1;
+}
+
+/*                 /////         END -LANDING - NEWS      /////                 */
+/*                 /////         START -SEC - ONE -NEWS     /////                 */
+.sec-one {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sec-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 80px;
+}
+
+.sec-one .sec-one-image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sec-one .sec-one-image .image {
+    width: 550px;
+    height: 350px;
+    object-fit: cover;
+
+}
+
+.sec-one .sec-one-image .image img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 13px;
+}
+
+.sec-one .sec-one-text {
+    width: 100%;
+}
+
+.sec-one .sec-one-image .info {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.sec-one .sec-one-image .info div {
+    width: 150px;
+    margin-right: 50px;
+}
+
+.sec-one .sec-one-image .info div i,
+.info span {
+    color: var(--p-color);
+    font-size: 15px;
+}
+
+.sec-one .sec-one-image .para h3 {
+    padding: 10px 0;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+
+.sec-one .sec-one-image .para p {
+    line-height: 1.6;
+    font-size: 15px;
+    color: var(--p-color);
+}
+
+:focus {
+    outline: none;
+}
+
+.sec-one-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sec-one-text .search {
+    height: 10%;
+}
+
+.sec-one-text .search input {
+    background-color: var(--section-bg-color);
+    border: none;
+    width: 300px;
+    height: 40px;
+    border-radius: 7px;
+    text-indent: 20px;
+    font-size: 13px;
+}
+
+.sec-one-text .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.sec-one-text .recent-news {
+    height: 35%;
+}
+
+.sec-one-text .recent-news .recent-news-one {
+    display: flex;
+
+}
+
+.recent-news .recent-news-image img {
+    width: 100px;
+    border-radius: 5px;
+}
+
+.recent-news .info-recent-news-one p {
+    font-size: 14px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.recent-news .recent-news-one {
+    margin-bottom: 10px;
+}
+
+.recent-news .info-recent-news-one span {
+    font-size: 11px;
+}
+
+.recent-news .info-recent-news-one .info {
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+.recent-news .info-recent-news-one i {
+    font-size: 10px;
+    color: var(--p-color);
+}
+
+.sec-one-text .recent-news h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.category {
+    height: 35%;
+    position: relative;
+}
+
+.category a {
+    padding-top: 15px;
+    display: block;
+    font-size: 10px;
+    color: var(--secondary-color);
+
+}
+
+.category a:hover {
+    color: var(--primary-color);
+}
+
+.category a::after {
+    content: attr(data-text);
+    position: absolute;
+    width: 15px;
+    height: 8px;
+    background-color: var(--custom-btn-bg-color);
+    color: white;
+    border-radius: 10px;
+    margin-left: 7px;
+    text-align: center;
+    font-size: 8px;
+    padding: 2px;
+}
+
+.category h4 {
+    color: var(--primary-color);
+}
+
+/*                 /////         START -SEC -TWO -NEWS     /////                 */
+.sec-two-same-one {
+    padding-top: 0px;
+    padding-bottom: 100px;
+}
+
+.sec-two-text {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sec-two-text .tags {
+    width: 300px;
+}
+
+.sec-two-text .tags h3 {
+    color: var(--primary-color);
+    padding-bottom: 12px;
+}
+
+.sec-two-text .tags button {
+    font-size: 12px;
+    padding: 8px 15px;
+    border-radius: 18px;
+    margin-bottom: 6px;
+    margin-right: 10px;
+    border: 1px solid transparent;
+}
+
+.sec-two-text .tags button:hover {
+    border-color: var(--custom-btn-bg-color);
+}
+
+.sec-two-text .new-form {
+    width: 300px;
+    background-color: var(--section-bg-color);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.sec-two-text .new-form h3 {
+    color: var(--primary-color);
+    padding-bottom: 15px;
+}
+
+.sec-two-text .new-form input {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.sec-two-text .new-form input[type="email"] {
+    border: none;
+    background-color: white;
+    width: 226px;
+    height: 40px;
+    font-size: 13px;
+    text-indent: 10px;
+}
+
+.sec-two-text .new-form input[type="submit"] {
+    border: none;
+    font-size: 13px;
+    background-color: var(--custom-btn-bg-color);
+    color: white;
+    width: 229px;
+    height: 40px;
+    border-radius: 22px;
+    transition: 0.3s;
+}
+
+.sec-two-text .new-form input[type="submit"]:hover {
+    background-color: var(--custom-btn-bg-hover-color);
+
+}
+
+::placeholder {
+    font-size: 13px;
+}
+
+/*                 /////         END -SEC -TWO -NEWS     /////                 */
+
+/* start media query */
+@media(max-width:1000px) {
+    .the-first .icon {
+        display: block;
+    }
+
+    .close {
+        display: none;
+    }
+
+    .the-first {
+        position: relative;
+    }
+
+    .the-first .ul-big {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        z-index: 2;
+        top: 75px;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        align-items: self-start;
+        padding: 10px 60px;
+    }
+
+
+    .the-first .btn {
+        margin-left: 0;
+        margin-bottom: 9px;
+    }
+
+    .the-first nav .ul-big li,
+    .the-first .btn {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .the-first nav .select {
+        margin-left: -2px;
+    }
+
+    .land {
+        background-position: 15% 0;
+    }
+
+    .about .son1 {
+        padding: 14px;
+    }
+
+    .services,
+    .about-two,
+    .about,
+    .our-causes {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .about-two {
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-two .text {
+        align-items: center;
+        text-align: center;
+    }
+
+    .volunteer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .volunteer .contact-volunteer {
+        width: 100%;
+    }
+
+    .volunteer .info-volunteer {
+        width: 80%;
+        margin-top: 0px;
+    }
+
+    .footer-one {
+        flex-wrap: wrap;
+    }
+
+    .sec-one {
+        padding: 40px 50px 0px 50px;
+        flex-direction: column;
+    }
+
+    .sec-two-text {
+        height: 250px;
+        flex-direction: row;
+    }
+
+    .sec-two-text .new-form {
+        height: 200px;
+    }
+
+    .sec-one-text .search input {
+        width: 100%;
+    }
+
+    .sec-one-text .desc {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 39px;
+        margin-top: 30px;
+    }
+
+    .category {
+        padding: 25px 30px;
+    }
+}
+
+
+@media (max-width:477px) {
+    .the-first {
+        padding: 0;
+    }
+
+    .icon {
+        margin-right: 25px;
+    }
+
+    .header {
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .land {
+        background-position: 21% 0%;
+    }
+
+    .about-two .image img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .about-two {
+        gap: 0px;
+    }
+
+    .about-two .text {
+        width: 100vw;
+        padding: 0 20px;
+    }
+
+    .services {
+        padding: 40px 0;
+    }
+
+    .services .title {
+        padding: 0px;
+    }
+
+    .banner {
+        padding: 0;
+    }
+
+    .banner .links .a-two {
+        margin: 5px auto 10px;
+    }
+
+    .banner::after,
+    .banner::before {
+        display: none;
+    }
+
+    .banner .text h2 {
+        text-align: center;
+    }
+
+    .our-causes {
+        padding: 30px 0;
+    }
+
+    .volunteer {
+        padding: 0;
+    }
+
+    .volunteer .contact-volunteer {
+        width: 90%;
+    }
+
+    .volunteer form {
+        padding: 15px 15px;
+    }
+
+    .volunteer form .inputs-form {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .volunteer form input,
+    .volunteer form textarea {
+        width: 100%;
+    }
+
+    .volunteer .info-volunteer {
+        margin-bottom: 25px;
+    }
+
+    .landing-donate .make-donation {
+        width: 350px;
+        padding: 15px 20px;
+    }
+
+    .make-donation .div-one .div-one-small {
+        flex-direction: column;
+    }
+
+    .div-two,
+    .div-three {
+        width: 100%;
+    }
+
+    .div-two .prices input,
+    .make-donation .div-three input {
+        width: 100%;
+    }
+
+    .landing-donate {
+        padding: 0;
+        height: calc(100vh + 100px);
+    }
+
+    .make-donation .div-three .inputs {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .make-donation .div-one .div-one-small p {
+        width: 310px;
+        padding: 15px 30px;
+
+    }
+
+    .footer-one {
+        gap: 15px;
+    }
+
+    footer {
+        justify-content: center;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    footer .text {
+        margin-bottom: 10px;
+    }
+
+    .sec-one .sec-one-image .image {
+        width: 70%;
+        height: 300px;
+    }
+
+    .sec-one-text .desc {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .category {
+        padding: 0;
+    }
+
+    .sec-one {
+        padding: 10px;
+        margin: 30px 0;
+    }
+
+    .sec-one .sec-one-image {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec-one .sec-one-image .image {
+        height: 300px;
+        margin: auto;
+        width: 360px;
+    }
+
+    .sec-one .sec-one-image .info {
+        flex-wrap: wrap;
+    }
+
+    .sec-one .sec-one-image .info div {
+        margin-bottom: 10px;
+    }
+
+    .sec-two-text {
+        height: 330px;
+        flex-direction: column;
+    }
+
+    .sec-two-text .new-form {
+        width: 100%;
+    }
+
+    .sec-two-text .new-form input[type="email"],
+    .sec-two-text .new-form input[type="submit"] {
+        width: 99%;
+    }
+}
